@@ -21,7 +21,7 @@ export default function IndexPage() {
     setIsLoading(true)
     try {
       const response = await fetch(
-        "https://api.skyfire.com/v1/top-up/create-top-up-session",
+        "https://api.skyfire.xyz/v1/top-up/create-top-up-session",
         {
           method: "POST",
           headers: {
