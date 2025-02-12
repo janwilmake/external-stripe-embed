@@ -25,7 +25,10 @@ export default function ExamplePage() {
 
     try {
       const response = await fetch(
-        "https://api.skyfire.xyz/v1/top-up/create-top-up-session",
+        `${
+          process.env.NEXT_PUBLIC_SKYFIRE_API_URL ||
+          "https://api-qa.skyfire.xyz"
+        }/v1/top-up/create-top-up-session`,
         {
           method: "POST",
           headers: {
