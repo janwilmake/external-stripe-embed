@@ -23,9 +23,14 @@ export default function ExamplePage() {
       return
     }
 
+    const apiUrl =
+      process.env.NEXT_PUBLIC_SKYFIRE_ENV === "production"
+        ? "https://api.skyfire.xyz"
+        : "https://api-qa.skyfire.xyz"
+
     try {
       const response = await fetch(
-        "https://api.skyfire.xyz/v1/top-up/create-top-up-session",
+        `${apiUrl}/v1/top-up/create-top-up-session`,
         {
           method: "POST",
           headers: {
