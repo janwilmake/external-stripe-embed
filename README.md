@@ -2,13 +2,13 @@
 
 ## Overview
 
-This example shows how to implement a Stripe payment for topping up Skyfire accounts. The implementation uses the Stripe Embedded Checkout.
+This example demonstrates how to integrate Stripe payments for adding funds to Skyfire accounts using your Skyfire API Key. It implements Stripe's Embedded Checkout flow.
 
 ## Key Components
 
 The main implementation is in the `stripe-payment-button.tsx` component, which handles:
 
-- Fetching `clientSecret` from Skyfire API
+- Fetching `clientSecret` from Skyfire API with Skyfire API Key
 - Stripe Embedded Checkout integration
 
 ## Environment Setup
