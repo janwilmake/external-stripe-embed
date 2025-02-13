@@ -19,6 +19,10 @@ You'll need to configure one environment variable:
 NEXT_PUBLIC_STRIPE_PUBLIC_KEY=stripe_public_key     # Contact us to get this key
 ```
 
+## CORS Configuration
+
+The Skyfire API for top-up operations is protected by CORS. To use the API, please contact us with your domain name to request access.
+
 ## Dependencies
 
 ```bash
